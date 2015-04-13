@@ -1,0 +1,171 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Agent Access</title>
+  <meta name="description" content="Agent Access">
+  <meta name="author" content="SitePoint">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+
+</head>
+
+<body onload="getPass()">
+
+
+<div class="wrapper">
+    <div class="header">
+	   <h1>Agent Access</h1>
+    </div> 
+    <div class="wrapleft"> 	  
+	    <div class="left">
+	    	<h2>Find an Account</h2>
+        <form>
+            Enter Account ID or Name: <input type="text" id="GetaccountID" value="">
+            <br>
+            
+          </form>
+          Accounts: <br><br>
+          <div id="currentComments"></div>
+
+	        
+	    </div>
+	</div>    
+	    <div class="right">
+	        <h2>Add account to database</h2>
+	       Account ID: <input type="text" id="accountIDS" value=""><br>			
+  			Account Name: <input type="text" id="accountName" value=""><br>
+  			API Key: <input type="text" id="accountAPIKey" value=""><br>
+  			<button id="submitAccount">Submit Account</button>
+            <button id="showAccounts">Show Accounts</button><br>
+  				<br>		    
+		    <div id="json"></div> 
+			<div id="currentCommentsRight"> </div><br><br>
+
+	    </div> 
+	    <div class="footer">
+	        Agent Access Copyright ©2015
+	    </div>     
+</div>
+<script>
+
+$(document).on('click', '.btn', function() {
+
+    var name = $(this).data('username');
+    var accountName = $(this).data('accountname');
+
+
+    if ((name != undefined || name != null) && (accountName != undefined || accountName != null)) {
+        window.location = '/check.html?api=' + name + "&accountname="+ accountName;
+    }
+});
+//--------------------------------------------
+function getPass(){
+ 
+            var url= "http://52.10.97.231/pass";
+               $.getJSON(url);
+               console.log("all done with password")
+          
+}
+
+function loadXMLDoc(filename)
+{
+if (window.XMLHttpRequest)
+  {
+  xhttp=new XMLHttpRequest();
+  }
+else // code for IE5 and IE6
+  {
+  xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xhttp.open("GET",filename,false);
+xhttp.send();
+return xhttp.responseXML;
+}
+
+$("#GetaccountID").keyup(function() {
+      xmlDoc=loadXMLDoc("testXML.xml");
+      console.log(xmlDoc);
+      console.log("test");
+      var url= "http://52.10.97.231/comment";
+       $.getJSON(url, function(data) {
+           var everything;
+           everything = "<ul>";
+       $.each(data, function(i, item) {
+       		if(!data[i].accountID.indexOf($("#GetaccountID").val()) ||!data[i].accountName.indexOf($("#GetaccountID").val())){
+       			console.log("this works for " + data[i].accountID + " = " + $("#GetaccountID").val());
+       			everything += "<li> accountID: " + data[i].accountID + "<br> accountName: " + data[i].accountName + "&nbsp;<input type='button' name='theButton' value='Select' class='btn' data-accountname="+ data[i].accountName + " data-username="+ data[i].accountAPIKey + " /><br> accountAPIKey: " + data[i].accountAPIKey +"</li>";
+       		}
+           
+       
+       });
+   			everything += "</ul>";
+       $("#currentComments").html(everything);
+       });
+
+
+  });
+</script>
+
+
+  <script>
+//dont modify
+$("#accountID").keyup(function() {
+      var jsonString = "getcity?q=";
+      jsonString+= $("#accountID").val();
+      var everything; 
+      console.log(jsonString);
+      $.getJSON(jsonString, function(data) {
+          if(data.length > 0) {
+              everything = "<ul>";
+              $.each(data, function(i, item) {
+              everything += "<li> " + data[i].city + "</li>";
+              });
+          everything += "</ul>";
+          $("#txtHint").html(everything);
+          } else {
+              everything = "<ul class='list-group'><li class='list-group-item'>No Suggestions</li></ul>";
+          }
+      })
+      .done(function() {console.log('getJSON request succeeded!'); })
+      .fail(function(jqXHR, textStatus, errorThrown) {
+            $("#textHint").html("<ul class='list-group'><li class='list-group-item'>No Suggestions</li></ul>");
+        });
+  });
+</script>
+
+<script> 
+      $(document).ready(function(){ 
+          $("#submitAccount").click(function(){ 
+               var myobj = {accountID:$("#accountIDS").val(), accountName: $("#accountName").val(), accountAPIKey: $("#accountAPIKey").val()};
+               jobj = JSON.stringify(myobj);
+               $("#json").text(jobj); 
+			   
+               var url= "http://52.10.97.231/comment";
+               $.post(url, jobj, function(data, textStatus) {
+               $("#done").html("<h3>" + textStatus + "</h3>");
+               });
+           });
+
+          $("#showAccounts").click(function(){ 
+          	var url= "http://52.10.97.231/comment";
+               $.getJSON(url, function(data) {
+                   var everything;
+                   everything = "<ul>";
+	           $.each(data, function(i, item) {
+
+	               everything += "<li> accountID: " + data[i].accountID + "<br> accountName: " + data[i].accountName + "<br> accountAPIKey: " + data[i].accountAPIKey +"</li>";
+	           
+	           });
+	       			everything += "</ul>";
+               $("#currentCommentsRight").html(everything);
+               });
+          });
+
+          
+      }); 
+    </script>
+</body>
+</html>

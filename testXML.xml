@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CollectionAccounts xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <AcountList>
+    <Account>
+      <AccountID>1005</AccountID>
+      <CollectionID>1003</CollectionID>
+      <Name>All items</Name>
+      <Description>All items in the KSL-MtBikes collection.</Description>
+    </Account>
+    <Account>
+      <AccountID>1006</AccountID>
+      <CollectionID>1003</CollectionID>
+      <Name>MountainBikesProvoArea</Name>
+      <Description />
+    </Account>
+    <Account>
+      <AccountID>11226</AccountID>
+      <CollectionID>1003</CollectionID>
+      <Name>test</Name>
+      <Description />
+    </Account>
+  </AccountList>
+</CollectionGetAccountsResponse>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <style type="text/css">
+    .col-wrapper{width:960px; margin:0 auto;}
+    .col{margin:0 10px; float:left; display:inline;}
+    .col-670{width:670px;}
+    .col-250{width:250px;}
+  </style>
+  <script type="text/javascript" src="http://demos.amitavroy.com/learningci/assets/js/xml2json.js" charset="UTF-8"></script>
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src= "http://www.simplygoodcode.com/wp-content/uploads/2014/07/angular.ng-modules.js"></script>
+    <meta charset="utf-8">
+    <script>
+          var todoApp = angular.module('todosApp',[]);
+        
+        todoApp.factory('todoFactory',function($http){
+          var factory = [];
+          
+          factory.getTodos = function(){
+              return $http.get("http://api.mozenda.com/rest?WebServiceKey=541A27BE-3AC7-4A9E-8CAB-6522C7D987EE&Service=Mozenda10&Operation=Agent.GetList");  
+          }
+
+          return factory;
+      });
+        
+        todoApp.controller('todos',['$scope', 'todoFactory', function($scope,todoFactory){
+
+          $scope.todos = [];
+          loadTodos();
+          
+          function loadTodos(){
+            todoFactory.getTodos().success(function(data){
+                agents  = x2js.xml_str2json(data).AgentGetListResponse.AgentList.Agent;
+                $scope.todos = agents;
+            });
+        }
+    }]);
+//------------------------------------------------------------------
+          var moduleB = angular.module("MyModuleB", []);
+
+          moduleB.factory('infoFactory',function($http){
+          var factory = [];
+          
+          factory.getInfo = function(){
+
+             var url = "http://api.mozenda.com/rest?WebServiceKey=541A27BE-3AC7-4A9E-8CAB-6522C7D987EE&Service=Mozenda10&Operation=Agent.Get&AgentID=";
+             url += document.getElementById('agentID').value;
+             console.log(url);
+              return $http.get(url);  
+          }
+
+          return factory;
+       });
+
+    moduleB.controller('MyControllerB',['$scope', 'infoFactory', function($scope,infoFactory){
+
+      $scope.MyControllerB = [];
+            loadInfo();
+            
+            $scope.toggle = function() {
+            console.log("click");
+          };
+            
+          function loadInfo(){
+            infoFactory.getInfo().success(function(data){
+                info  = x2js.xml_str2json(data).AgentGetResponse;
+                console.log(info)
+                $scope.MyControllerB = info;
+            });
+        }
+    }]);
+//----------------------------------------------------
+    var app = angular.module('myApp', []);
+app.controller('personCtrl', function($scope) {
+    $scope.firstName = "John",
+    $scope.lastName = "Doe"
+    $scope.myVar = false;
+    $scope.toggle = function() {
+        $scope.myVar = !$scope.myVar;
+        //console.log("click");
+    }
+});
+
+    function check(p1) {
+      console.log("click");
+      console.log(p1);
+      document.getElementById('agentID').value=p1;
+      document.getElementById('agentID').focus();
+      document.getElementById('agentID').blur();
+}
+
+//----------------Onchange-----------------------------------
+var app2=angular.module('myApp2', []);
+
+app2.factory('infoFactory',function($http){
+          var factory = [];
+          
+          factory.getInfo = function(){
+
+             var url = "http://api.mozenda.com/rest?WebServiceKey=541A27BE-3AC7-4A9E-8CAB-6522C7D987EE&Service=Mozenda10&Operation=Agent.Get&AgentID=";
+             url += document.getElementById('agentID').value;
+             console.log(url);
+              return $http.get(url);  
+          }
+
+          return factory;
+       });
+
+
+app2.directive('onChange', function() {    
+    return {
+        restrict: 'A',
+        scope:{'onChange':'=' },
+        link: function(scope, elm, attrs) {            
+            scope.$watch('onChange', function(nVal) { elm.val(nVal); });            
+            elm.bind('blur', function() {
+                var currentValue = elm.val();                
+                if( scope.onChange !== currentValue ) {
+                    scope.$apply(function() {
+                        scope.onChange = currentValue;
+                    });
+                }
+            });
+        }
+    };        
+});
+
+app2.controller('MyCtrl', ['$scope', 'infoFactory', function($scope,infoFactory) { 
+    $scope.strText = document.getElementById('agentID').value;
+            
+            $scope.test = function() {
+            console.log("clickgere");
+            $scope.MyCtrl = [];
+              loadInfo();
+              console.log("done");
+          };
+            
+          function loadInfo(){
+            infoFactory.getInfo().success(function(data){
+                info  = x2js.xml_str2json(data).AgentGetResponse;
+                console.log(info)
+                $scope.MyCtrl = info;
+            });
+        }
+    }]);
+
+//------------------------------------------------------------
+        </script>
+    </head>
+   <body ng-modules="todosApp, MyModuleB, myApp, myApp2">
+
+    <div class="col-wrapper" ng-controller="MyCtrl">
+        <div class="col col-670">
+            <h2>Parsing XML data with AngularJS</h2>
+            <div ng-controller="MyControllerB">
+                    <p>Name: {{MyControllerB.Name}}</p>
+            </div>
+            <input type="text" ng-model="search" class="search-query" placeholder="Search">
+            <div ng-controller="todos" style="width:50%; display:inline"><ul><li ng-repeat="todo in todos | filter:search">{{todo.AgentID}}  <button value='{{todo.AgentID}}' onclick="check(this.value)" ng-click="test()">{{todo.Name}}</button></div>
+        </div>
+        <div class="col col-250">
+          <div>
+            Input: <input id="agentID" value="1004" on-change="strText">
+            <input on-change="strText"/>
+          <input on-change="strText"/>
+          <p><strong>Test: </strong>{{strText}}</p>
+          <p><strong>Name: </strong>{{MyCtrl.Name}}</p>
+          <p><strong>AgentID: </strong>{{MyCtrl.AgentID}}</p>
+        <p><strong>CollectionID: </strong>{{MyCtrl.CollectionID}}</p>
+        <p><strong>Description: </strong>{{MyCtrl.Description}}</p>
+        <p><strong>Domain: </strong>{{MyCtrl.Domain}}</p>
+
+          </div>
+            <div ng-module="MyModuleB">
+                <h1>Just Module B</h1>
+                <div ng-controller="MyControllerB">
+                    <p>Name: {{MyControllerB.Name}}</p>
+                </div>
+            </div>
+
+            <div ng-app="myApp" ng-controller="personCtrl">
+
+<button ng-click="toggle()">Hide user</button>
+
+<p ng-hide="myVar">
+First Name: <input type=text ng-model="firstName"><br>
+Last Name: <input type=text ng-model="lastName"><br><br>
+Full Name: {{firstName + " " + lastName}}
+</p>
+
+</div>
+
+
+
+
+        </div>
+    </div>
+
+    </body>
+</html>

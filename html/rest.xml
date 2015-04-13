@@ -1,0 +1,1478 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AgentGetListResponse xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <Result>Success</Result>
+  <AgentList>
+    <Agent>
+      <Created>2014-03-26 18:11:58</Created>
+      <Modified>2014-03-26 18:11:59</Modified>
+      <AgentID>1001</AgentID>
+      <Name>Tutorial</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-03-26 18:44:57</Created>
+      <Modified>2014-03-26 19:06:16</Modified>
+      <AgentID>1002</AgentID>
+      <Name>Walmart Digiital Cameras</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-03-31 15:52:52</Created>
+      <Modified>2014-03-31 15:52:53</Modified>
+      <AgentID>1003</AgentID>
+      <Name>Bank of Montreal</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-04-17 07:00:13</Created>
+      <Modified>2014-07-08 07:52:29</Modified>
+      <AgentID>1004</AgentID>
+      <Name>KSL-MtBikes</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, NoImagePackages, ShowImages, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-04-17 10:13:15</Created>
+      <Modified>2014-04-25 06:50:11</Modified>
+      <AgentID>1005</AgentID>
+      <Name>BMO</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-04-18 09:49:31</Created>
+      <Modified>2014-04-24 06:22:11</Modified>
+      <AgentID>1006</AgentID>
+      <Name>AmazonBooks</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-04-24 06:38:32</Created>
+      <Modified>2014-04-24 08:15:13</Modified>
+      <AgentID>1007</AgentID>
+      <Name>Restaurants</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-04-24 09:02:45</Created>
+      <Modified>2014-05-12 07:12:20</Modified>
+      <AgentID>1008</AgentID>
+      <Name>Laptops</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-04-24 10:35:21</Created>
+      <Modified>2014-04-25 12:10:15</Modified>
+      <AgentID>1009</AgentID>
+      <Name>Hotels-Paris</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-04-24 11:31:34</Created>
+      <Modified>2014-04-24 11:49:39</Modified>
+      <AgentID>1010</AgentID>
+      <Name>BostonCollegeCourse</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-04-25 09:25:29</Created>
+      <Modified>2014-04-25 09:25:30</Modified>
+      <AgentID>1011</AgentID>
+      <Name>TestGoogleNews</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-04-28 08:50:21</Created>
+      <Modified>2014-04-28 09:16:07</Modified>
+      <AgentID>1012</AgentID>
+      <Name>AppleStore</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-05-01 14:59:58</Created>
+      <Modified>2014-05-02 16:28:07</Modified>
+      <AgentID>1013</AgentID>
+      <Name>MIneComplex</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-05-02 12:49:44</Created>
+      <Modified>2014-05-02 15:01:50</Modified>
+      <AgentID>1014</AgentID>
+      <Name>TechCrunch</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-05-05 07:05:53</Created>
+      <Modified>2014-05-05 07:05:54</Modified>
+      <AgentID>1015</AgentID>
+      <Name>CHEESE</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-05-15 09:31:00</Created>
+      <Modified>2014-05-15 09:31:02</Modified>
+      <AgentID>1017</AgentID>
+      <Name>Google drop down</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-05-20 13:49:29</Created>
+      <Modified>2014-05-20 13:49:30</Modified>
+      <AgentID>1018</AgentID>
+      <Name>ct-liahyundai-06120-new-Mozenda Support</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-05-20 14:36:39</Created>
+      <Modified>2014-05-20 14:36:40</Modified>
+      <AgentID>1019</AgentID>
+      <Name>VSIssue</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-05-21 12:06:44</Created>
+      <Modified>2014-05-21 12:17:02</Modified>
+      <AgentID>1020</AgentID>
+      <Name>Ducate</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-05-23 14:04:44</Created>
+      <Modified>2014-05-23 14:04:45</Modified>
+      <AgentID>1021</AgentID>
+      <Name>Monster Warehouse Waukegan</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-05-24 10:14:28</Created>
+      <Modified>2014-05-24 10:31:11</Modified>
+      <AgentID>1022</AgentID>
+      <Name>RFURL20140522</Name>
+      <Description />
+      <Settings>SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-05-31 12:58:59</Created>
+      <Modified>2014-05-31 12:59:00</Modified>
+      <AgentID>1023</AgentID>
+      <Name>wmcareers</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-03 10:14:00</Created>
+      <Modified>2014-09-17 22:23:22</Modified>
+      <AgentID>1025</AgentID>
+      <Name>PDF download</Name>
+      <Description />
+      <Settings>ConvertPdf</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-06-03 13:54:00</Created>
+      <Modified>2014-06-03 14:04:48</Modified>
+      <AgentID>1026</AgentID>
+      <Name>ABA - 2014</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-03 14:34:21</Created>
+      <Modified>2014-06-03 14:34:21</Modified>
+      <AgentID>1027</AgentID>
+      <Name>Bonyeah</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-04 07:07:52</Created>
+      <Modified>2014-06-04 07:07:54</Modified>
+      <AgentID>1028</AgentID>
+      <Name>TERNA - SI IT NTC Forecasts-PopupWindow</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-04 08:55:12</Created>
+      <Modified>2014-07-14 14:30:06</Modified>
+      <AgentID>1029</AgentID>
+      <Name>ImageDownloadFromUrlColl</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-05 08:19:16</Created>
+      <Modified>2014-06-05 08:19:46</Modified>
+      <AgentID>1030</AgentID>
+      <Name>Shipping-40 ft - TypingNames</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-06-06 11:53:11</Created>
+      <Modified>2014-06-06 12:04:32</Modified>
+      <AgentID>1031</AgentID>
+      <Name>SDB-SingleInput</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-12 08:04:41</Created>
+      <Modified>2014-06-13 10:50:36</Modified>
+      <AgentID>1032</AgentID>
+      <Name>Gazelle</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-12 12:08:29</Created>
+      <Modified>2014-06-12 12:08:30</Modified>
+      <AgentID>1033</AgentID>
+      <Name>Gazelle Apple Comps</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-13 11:18:13</Created>
+      <Modified>2014-06-13 11:18:13</Modified>
+      <AgentID>1034</AgentID>
+      <Name>scrolling not supporting</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-13 11:45:12</Created>
+      <Modified>2014-06-13 14:24:33</Modified>
+      <AgentID>1035</AgentID>
+      <Name>Gazelle Iphones</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-17 12:45:39</Created>
+      <Modified>2014-06-17 12:48:15</Modified>
+      <AgentID>1036</AgentID>
+      <Name>Test Docs</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-17 12:50:46</Created>
+      <Modified>2014-06-17 12:50:46</Modified>
+      <AgentID>1037</AgentID>
+      <Name>Doc Tetsjstysagtas</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-18 07:43:09</Created>
+      <Modified>2014-06-18 11:38:54</Modified>
+      <AgentID>1038</AgentID>
+      <Name>Test New Agent2</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, ShowImages, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-06-18 12:05:17</Created>
+      <Modified>2014-06-18 13:03:26</Modified>
+      <AgentID>1039</AgentID>
+      <Name>Test New Agent3</Name>
+      <Description />
+      <Settings>UseAnonymizer</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-06-19 10:40:02</Created>
+      <Modified>2014-06-19 10:40:43</Modified>
+      <AgentID>1040</AgentID>
+      <Name>NutritendaESNOVO-REV</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, ShowImages, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-06-20 11:41:47</Created>
+      <Modified>2014-06-20 12:24:37</Modified>
+      <AgentID>1041</AgentID>
+      <Name>Buy-Stationery-Mozenda Test1</Name>
+      <Description />
+      <Settings>DisableActiveX, IgnoreWebsiteErrors, MaximizeBrowserWindow, ShowImages, SingleBrowser, StopOnHarvestingError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-06-23 09:11:17</Created>
+      <Modified>2014-06-23 13:13:26</Modified>
+      <AgentID>1042</AgentID>
+      <Name>tfuyf</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-23 11:32:45</Created>
+      <Modified>2014-06-23 11:32:46</Modified>
+      <AgentID>1043</AgentID>
+      <Name>List If Statement</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-23 11:50:31</Created>
+      <Modified>2014-06-23 11:50:32</Modified>
+      <AgentID>1044</AgentID>
+      <Name>Tulane Medical Center</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-24 08:18:49</Created>
+      <Modified>2014-06-24 08:18:49</Modified>
+      <AgentID>1045</AgentID>
+      <Name>ListItemIndex Tester</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-25 13:17:07</Created>
+      <Modified>2014-06-25 14:37:05</Modified>
+      <AgentID>1046</AgentID>
+      <Name>Agent-003</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-26 11:48:08</Created>
+      <Modified>2014-06-26 11:49:23</Modified>
+      <AgentID>1047</AgentID>
+      <Name>achicanew - Mozenda</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, SingleBrowser, UseAnonymizer</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-06-27 09:09:29</Created>
+      <Modified>2014-06-27 10:39:42</Modified>
+      <AgentID>1048</AgentID>
+      <Name>CompareTheMarket</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-27 14:18:07</Created>
+      <Modified>2014-06-27 14:18:07</Modified>
+      <AgentID>1049</AgentID>
+      <Name>2209-Howard Computers</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-27 14:30:39</Created>
+      <Modified>2014-06-27 14:30:40</Modified>
+      <AgentID>1050</AgentID>
+      <Name>FindAnAdvisor</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-06-27 14:32:51</Created>
+      <Modified>2014-06-27 14:32:52</Modified>
+      <AgentID>1051</AgentID>
+      <Name>GetLongLat</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-03 08:39:31</Created>
+      <Modified>2014-07-08 13:55:27</Modified>
+      <AgentID>1052</AgentID>
+      <Name>Lennar</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-08 11:22:29</Created>
+      <Modified>2014-07-08 11:57:45</Modified>
+      <AgentID>1053</AgentID>
+      <Name>Address not captured</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, ShowImages, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-07-08 14:03:10</Created>
+      <Modified>2014-07-08 14:31:46</Modified>
+      <AgentID>1054</AgentID>
+      <Name>LennarClick</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-08 14:32:50</Created>
+      <Modified>2014-07-08 14:32:50</Modified>
+      <AgentID>1055</AgentID>
+      <Name>LennarLoadUrls</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-09 07:54:56</Created>
+      <Modified>2014-10-22 08:11:15</Modified>
+      <AgentID>1056</AgentID>
+      <Name>BottomUpXpaths</Name>
+      <Description>good practice</Description>
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-09 09:35:10</Created>
+      <Modified>2014-07-09 09:37:20</Modified>
+      <AgentID>1057</AgentID>
+      <Name>CourtClerk</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-14 07:46:22</Created>
+      <Modified>2014-07-14 07:46:23</Modified>
+      <AgentID>1058</AgentID>
+      <Name>Osram-Julio-2014-V5-Imagens</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-15 08:16:30</Created>
+      <Modified>2014-07-15 08:34:35</Modified>
+      <AgentID>1059</AgentID>
+      <Name>AFIGFilingsFinDocs 4179385</Name>
+      <Description />
+      <Settings>StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-07-15 08:36:07</Created>
+      <Modified>2014-07-15 08:36:09</Modified>
+      <AgentID>1060</AgentID>
+      <Name>AFIGFilingsFinDocs 4179385-Mozenda</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-16 09:52:12</Created>
+      <Modified>2014-07-16 09:59:11</Modified>
+      <AgentID>1061</AgentID>
+      <Name>BugAfterItemList</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-17 09:30:22</Created>
+      <Modified>2014-07-17 10:36:13</Modified>
+      <AgentID>1062</AgentID>
+      <Name>BottomUpXpaths-practice</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-18 13:38:42</Created>
+      <Modified>2014-07-18 13:49:12</Modified>
+      <AgentID>1063</AgentID>
+      <Name>AFIGFilingsFinDocs 4179385Test</Name>
+      <Description />
+      <Settings>StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-07-19 12:32:49</Created>
+      <Modified>2014-07-19 13:52:14</Modified>
+      <AgentID>1064</AgentID>
+      <Name>EXDOCS-1-NOFILES-Mozenda Test</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, ShowImages, SingleBrowser, UseAnonymizer</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-07-21 10:29:24</Created>
+      <Modified>2014-07-21 10:29:24</Modified>
+      <AgentID>1065</AgentID>
+      <Name>Spacing Error</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-21 10:43:40</Created>
+      <Modified>2014-09-17 22:23:22</Modified>
+      <AgentID>1066</AgentID>
+      <Name>pdfURL</Name>
+      <Description />
+      <Settings>ConvertPdf</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-07-22 16:50:58</Created>
+      <Modified>2014-07-22 16:54:11</Modified>
+      <AgentID>1067</AgentID>
+      <Name>fieldcatalogTest</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-25 16:05:05</Created>
+      <Modified>2014-07-29 12:32:56</Modified>
+      <AgentID>1068</AgentID>
+      <Name>Employees on LinkedIn</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-07-29 11:33:51</Created>
+      <Modified>2014-07-29 11:43:11</Modified>
+      <AgentID>1069</AgentID>
+      <Name>Wiscansin</Name>
+      <Description>works only in 8, else it does funky stuff</Description>
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-30 08:31:54</Created>
+      <Modified>2014-07-30 08:32:32</Modified>
+      <AgentID>1070</AgentID>
+      <Name>KSL1</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-30 08:32:23</Created>
+      <Modified>2014-07-30 08:32:23</Modified>
+      <AgentID>1071</AgentID>
+      <Name>KSL2</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-30 08:35:26</Created>
+      <Modified>2014-07-30 08:35:27</Modified>
+      <AgentID>1072</AgentID>
+      <Name>KSL3</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-07-30 11:24:34</Created>
+      <Modified>2014-07-30 11:26:27</Modified>
+      <AgentID>1073</AgentID>
+      <Name>Iranica All</Name>
+      <Description>content replacement, refine capture text, capture all images into one field</Description>
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-01 15:31:42</Created>
+      <Modified>2014-08-01 15:31:53</Modified>
+      <AgentID>1074</AgentID>
+      <Name>SLB</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-04 11:40:10</Created>
+      <Modified>2014-08-04 11:40:11</Modified>
+      <AgentID>1075</AgentID>
+      <Name>RelatedAnIndex</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-05 11:06:53</Created>
+      <Modified>2014-08-05 11:06:53</Modified>
+      <AgentID>1076</AgentID>
+      <Name>wun</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-07 10:33:06</Created>
+      <Modified>2014-08-07 10:36:04</Modified>
+      <AgentID>1077</AgentID>
+      <Name>AFIGBrn 4242334 1</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-07 12:57:59</Created>
+      <Modified>2014-08-20 12:00:05</Modified>
+      <AgentID>1078</AgentID>
+      <Name>MNCIContent 4210697 1</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-08-08 10:10:26</Created>
+      <Modified>2014-08-08 13:52:47</Modified>
+      <AgentID>1079</AgentID>
+      <Name>Target-Games-Used</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-08 11:27:40</Created>
+      <Modified>2014-08-08 11:27:40</Modified>
+      <AgentID>1080</AgentID>
+      <Name>Googlemaps</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-13 14:52:58</Created>
+      <Modified>2014-08-13 14:53:02</Modified>
+      <AgentID>1081</AgentID>
+      <Name>ancestor xpath</Name>
+      <Description>second click item was causing duplicates, adjust xpath to look at attributes to prevent it.</Description>
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-19 10:20:15</Created>
+      <Modified>2014-08-19 10:34:40</Modified>
+      <AgentID>1082</AgentID>
+      <Name>EX 102890</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-21 11:01:59</Created>
+      <Modified>2014-08-21 11:02:00</Modified>
+      <AgentID>1083</AgentID>
+      <Name>Mandtbank</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-21 11:27:13</Created>
+      <Modified>2014-08-21 11:27:13</Modified>
+      <AgentID>1084</AgentID>
+      <Name>PVR-Cinemas</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-22 13:20:04</Created>
+      <Modified>2014-08-22 13:23:10</Modified>
+      <AgentID>1085</AgentID>
+      <Name>DBrn 2506899</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-25 14:38:26</Created>
+      <Modified>2014-08-25 14:41:54</Modified>
+      <AgentID>1086</AgentID>
+      <Name>EPrice</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, StopOnHarvestingError, StopOnWebsiteError, UseAnonymizer</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-08-26 14:35:48</Created>
+      <Modified>2014-08-26 14:35:48</Modified>
+      <AgentID>1087</AgentID>
+      <Name>STV AS</Name>
+      <Description>Xpath Look to previous tag for category</Description>
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-26 17:55:25</Created>
+      <Modified>2014-08-26 17:55:26</Modified>
+      <AgentID>1088</AgentID>
+      <Name>Avis-1-day</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-27 16:36:54</Created>
+      <Modified>2014-08-27 16:40:02</Modified>
+      <AgentID>1089</AgentID>
+      <Name>Demo 1</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-27 16:42:37</Created>
+      <Modified>2014-08-27 16:45:17</Modified>
+      <AgentID>1090</AgentID>
+      <Name>Demo 1 List of Images</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-27 17:46:01</Created>
+      <Modified>2014-08-27 18:02:40</Modified>
+      <AgentID>1091</AgentID>
+      <Name>NDC Pull</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-28 15:00:33</Created>
+      <Modified>2014-08-28 15:02:08</Modified>
+      <AgentID>1092</AgentID>
+      <Name>caaDOTofficialbuyersguideDOTnet - Test</Name>
+      <Description />
+      <Settings>UseAnonymizer</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-08-28 16:54:40</Created>
+      <Modified>2014-08-29 16:50:29</Modified>
+      <AgentID>1093</AgentID>
+      <Name>Amazon-Games-PS2</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, ShowImages, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-08-28 18:02:25</Created>
+      <Modified>2014-09-17 22:23:21</Modified>
+      <AgentID>1094</AgentID>
+      <Name>JD - CDA-4</Name>
+      <Description />
+      <Settings>ConvertPdf</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-08-29 13:18:11</Created>
+      <Modified>2014-08-29 15:04:57</Modified>
+      <AgentID>1095</AgentID>
+      <Name>ALN - Clients - Leased Invoiced Paid Pt2</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-29 13:25:13</Created>
+      <Modified>2014-08-29 13:25:14</Modified>
+      <AgentID>1096</AgentID>
+      <Name>Intel-Amazon-All in One Desktops 1000</Name>
+      <Description>Insert javascript</Description>
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-08-29 14:53:26</Created>
+      <Modified>2014-08-29 14:53:27</Modified>
+      <AgentID>1097</AgentID>
+      <Name>ALN - Clients - Leased Invoiced Paid Pt1</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-02 07:08:56</Created>
+      <Modified>2014-09-02 07:08:57</Modified>
+      <AgentID>1098</AgentID>
+      <Name>Frames</Name>
+      <Description>uses frames and a click action to return to dropdown selection</Description>
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-04 06:38:20</Created>
+      <Modified>2014-09-04 06:44:17</Modified>
+      <AgentID>1099</AgentID>
+      <Name>GFIGFilingsFinDocs 4548932 - Fix</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-04 07:46:54</Created>
+      <Modified>2014-09-04 09:03:17</Modified>
+      <AgentID>1100</AgentID>
+      <Name>LinkedInCompanyScrape</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, ShowImages</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-09-04 11:06:05</Created>
+      <Modified>2014-10-16 11:28:29</Modified>
+      <AgentID>1101</AgentID>
+      <Name>ADI Canada Audio-Video - Test</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-04 11:56:22</Created>
+      <Modified>2014-09-05 09:05:10</Modified>
+      <AgentID>1102</AgentID>
+      <Name>ADI Canada Audio-Video</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-09-05 09:42:54</Created>
+      <Modified>2014-09-05 11:52:22</Modified>
+      <AgentID>1103</AgentID>
+      <Name>Agent postponds in web console</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-09-05 11:40:08</Created>
+      <Modified>2014-09-05 11:40:08</Modified>
+      <AgentID>1104</AgentID>
+      <Name>jsc-1day-bid-scrape-production-Mozenda</Name>
+      <Description>Click item causes 504, load page causes success</Description>
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-15 07:41:18</Created>
+      <Modified>2014-09-15 10:20:14</Modified>
+      <AgentID>1105</AgentID>
+      <Name>MNCIContent 3001792 11</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-15 08:29:25</Created>
+      <Modified>2014-09-15 08:39:49</Modified>
+      <AgentID>1106</AgentID>
+      <Name>ALN Management Co and Property Info - Mo</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-09-16 09:14:27</Created>
+      <Modified>2014-09-16 09:14:28</Modified>
+      <AgentID>1107</AgentID>
+      <Name>EX4149705</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-19 10:37:39</Created>
+      <Modified>2014-09-19 10:37:41</Modified>
+      <AgentID>1108</AgentID>
+      <Name>01-004-Amazon List Results - Test</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-20 13:00:22</Created>
+      <Modified>2014-09-22 06:16:35</Modified>
+      <AgentID>1109</AgentID>
+      <Name>PotamkinParts</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-22 07:52:52</Created>
+      <Modified>2014-09-22 09:57:52</Modified>
+      <AgentID>1110</AgentID>
+      <Name>IntlEventsPresentations 4293846</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-23 07:40:02</Created>
+      <Modified>2014-09-23 07:44:42</Modified>
+      <AgentID>1111</AgentID>
+      <Name>mossycareers</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-23 10:45:07</Created>
+      <Modified>2014-09-26 07:50:27</Modified>
+      <AgentID>1112</AgentID>
+      <Name>jobsearch-qldbrisbane-megacube MOZENDA</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-26 08:02:33</Created>
+      <Modified>2014-09-26 10:34:27</Modified>
+      <AgentID>1113</AgentID>
+      <Name>jobsearch-test</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-09-29 06:28:59</Created>
+      <Modified>2014-09-29 06:55:08</Modified>
+      <AgentID>1114</AgentID>
+      <Name>coles</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-09-29 20:18:10</Created>
+      <Modified>2014-09-30 06:57:10</Modified>
+      <AgentID>1115</AgentID>
+      <Name>jobsearch-test1</Name>
+      <Description />
+      <Settings>DisableActiveX, MaximizeBrowserWindow, ShowImages, SingleBrowser, StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-10-01 11:26:52</Created>
+      <Modified>2014-10-01 11:26:53</Modified>
+      <AgentID>1116</AgentID>
+      <Name>CBS Details321</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-06 09:40:12</Created>
+      <Modified>2014-10-06 09:40:12</Modified>
+      <AgentID>1117</AgentID>
+      <Name>CSE</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-06 11:19:51</Created>
+      <Modified>2014-10-06 11:19:55</Modified>
+      <AgentID>1118</AgentID>
+      <Name>ThompsonHineFPP - test</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-10 07:49:21</Created>
+      <Modified>2014-10-10 07:51:11</Modified>
+      <AgentID>1119</AgentID>
+      <Name>HealthEast Care System</Name>
+      <Description />
+      <Settings>UseAnonymizer</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-10-10 11:04:54</Created>
+      <Modified>2014-10-10 11:04:55</Modified>
+      <AgentID>1120</AgentID>
+      <Name>Bad HTML</Name>
+      <Description>converts the HTML as a document to HTML. This cleans up the HTML a bit and makes it scrapable.</Description>
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-14 08:18:10</Created>
+      <Modified>2014-10-21 09:05:50</Modified>
+      <AgentID>1121</AgentID>
+      <Name>GFIGFilingsFinDocs 4263466</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-14 09:58:04</Created>
+      <Modified>2014-10-14 09:58:06</Modified>
+      <AgentID>1122</AgentID>
+      <Name>ADI USA Audio-Video - Test</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-15 06:56:40</Created>
+      <Modified>2014-10-17 07:35:46</Modified>
+      <AgentID>1123</AgentID>
+      <Name>Rajesh Testing 1</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-15 07:14:43</Created>
+      <Modified>2014-10-15 07:14:57</Modified>
+      <AgentID>1125</AgentID>
+      <Name>Rajesh Testing 3</Name>
+      <Description />
+      <Settings>StopOnHarvestingError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-10-15 09:42:17</Created>
+      <Modified>2014-10-15 09:44:31</Modified>
+      <AgentID>1126</AgentID>
+      <Name>Korea Exchange</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-16 06:40:36</Created>
+      <Modified>2014-10-16 06:40:38</Modified>
+      <AgentID>1127</AgentID>
+      <Name>PDF list</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-16 08:49:20</Created>
+      <Modified>2014-10-16 08:49:21</Modified>
+      <AgentID>1128</AgentID>
+      <Name>Rajesh Testing 2</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-16 09:22:10</Created>
+      <Modified>2014-10-16 09:22:13</Modified>
+      <AgentID>1129</AgentID>
+      <Name>Rajesh Testing original</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-20 07:28:30</Created>
+      <Modified>2014-10-20 07:28:31</Modified>
+      <AgentID>1130</AgentID>
+      <Name>GFIGFilingsFinDocs 4256420</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-20 08:48:42</Created>
+      <Modified>2014-10-31 11:07:15</Modified>
+      <AgentID>1131</AgentID>
+      <Name>KSL Climbing Gear</Name>
+      <Description />
+      <Settings>AppendItems, BrowserIsolation, MaximizeBrowserWindow</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-10-21 08:01:09</Created>
+      <Modified>2014-10-21 08:01:10</Modified>
+      <AgentID>1132</AgentID>
+      <Name>salesgenie</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-21 09:09:11</Created>
+      <Modified>2014-10-21 09:09:12</Modified>
+      <AgentID>1133</AgentID>
+      <Name>GFIGFilingsFinDocs 4263466 test</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-21 09:17:33</Created>
+      <Modified>2014-10-21 09:17:36</Modified>
+      <AgentID>1134</AgentID>
+      <Name>GFIGFilingsFinDocs 4256420 test</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-27 07:05:33</Created>
+      <Modified>2014-10-27 07:07:14</Modified>
+      <AgentID>1135</AgentID>
+      <Name>GFIGFilingsFinDocs 4553898</Name>
+      <Description />
+      <Settings>SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-10-30 11:38:17</Created>
+      <Modified>2014-10-31 07:10:46</Modified>
+      <AgentID>1136</AgentID>
+      <Name>Boevingloh Pliakos 141015</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-31 06:23:44</Created>
+      <Modified>2014-10-31 06:23:45</Modified>
+      <AgentID>1137</AgentID>
+      <Name>Boevingloh Pliakos Part 2</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-10-31 16:48:21</Created>
+      <Modified>2014-11-05 07:53:50</Modified>
+      <AgentID>1138</AgentID>
+      <Name>partsnetweb Mozenda Start</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, SingleBrowser, StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-11-03 10:36:01</Created>
+      <Modified>2014-11-05 07:58:46</Modified>
+      <AgentID>1139</AgentID>
+      <Name>partsnetweb-test</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-11-03 11:42:47</Created>
+      <Modified>2014-11-03 11:42:48</Modified>
+      <AgentID>1140</AgentID>
+      <Name>Agent-002</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-11-03 11:44:05</Created>
+      <Modified>2014-11-03 11:44:06</Modified>
+      <AgentID>1141</AgentID>
+      <Name>Agent-001</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-11-04 08:19:19</Created>
+      <Modified>2014-11-04 08:19:43</Modified>
+      <AgentID>1142</AgentID>
+      <Name>Services-PartsNetWeb-01-InputValue</Name>
+      <Description />
+      <Settings>DisableActiveX, MaximizeBrowserWindow, ShowImages, SingleBrowser, StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-11-04 09:11:16</Created>
+      <Modified>2014-11-04 09:11:17</Modified>
+      <AgentID>1143</AgentID>
+      <Name>Services-PartNetWeb-02-PartNumbers</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-11-05 07:56:10</Created>
+      <Modified>2014-11-05 07:56:11</Modified>
+      <AgentID>1144</AgentID>
+      <Name>partsnetweb Mozenda Startv2</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-11-05 08:02:45</Created>
+      <Modified>2014-11-05 09:40:31</Modified>
+      <AgentID>1145</AgentID>
+      <Name>partsnetweb-test- hashtag no filter</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, ShowImages, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-11-05 13:25:01</Created>
+      <Modified>2014-11-06 06:17:02</Modified>
+      <AgentID>1146</AgentID>
+      <Name>PartNetWeb-Test-IE8 v1</Name>
+      <Description />
+      <Settings>DisableActiveX, MaximizeBrowserWindow, ShowImages, SingleBrowser, StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-11-07 07:53:20</Created>
+      <Modified>2014-11-07 09:52:15</Modified>
+      <AgentID>1147</AgentID>
+      <Name>MikesAgent</Name>
+      <Description />
+      <Settings>ConvertPdf</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-11-10 06:59:55</Created>
+      <Modified>2014-11-10 06:59:55</Modified>
+      <AgentID>1148</AgentID>
+      <Name>LinkedinSupportSite</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-11-19 09:21:52</Created>
+      <Modified>2014-11-19 09:23:28</Modified>
+      <AgentID>1149</AgentID>
+      <Name>20141119RyanairNeu</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-11-26 08:23:11</Created>
+      <Modified>2014-11-26 08:28:43</Modified>
+      <AgentID>1150</AgentID>
+      <Name>Test 1 GHN</Name>
+      <Description />
+      <Settings>StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-11-26 08:32:49</Created>
+      <Modified>2014-12-01 07:04:27</Modified>
+      <AgentID>1151</AgentID>
+      <Name>Test 2 GHN</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-02 09:38:25</Created>
+      <Modified>2014-12-02 09:57:02</Modified>
+      <AgentID>1152</AgentID>
+      <Name>Amazon TYC</Name>
+      <Description />
+      <Settings>DisableActiveX, MaximizeBrowserWindow, ShowImages, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-03 06:18:07</Created>
+      <Modified>2014-12-03 09:34:24</Modified>
+      <AgentID>1153</AgentID>
+      <Name>Property News 02Dec2014 - Mozenda Fixed</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-03 09:54:39</Created>
+      <Modified>2014-12-03 10:27:45</Modified>
+      <AgentID>1154</AgentID>
+      <Name>MJH-NewPig-URLonly2014-MOZENDA</Name>
+      <Description />
+      <Settings>DisableActiveX, MaximizeBrowserWindow, ShowImages, SingleBrowser, StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-03 10:44:59</Created>
+      <Modified>2014-12-03 10:45:22</Modified>
+      <AgentID>1155</AgentID>
+      <Name>MJH-NewPig-URLonly2014-MOZENDAv1</Name>
+      <Description />
+      <Settings>DisableActiveX, MaximizeBrowserWindow, ShowImages, SingleBrowser, StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-03 10:53:55</Created>
+      <Modified>2014-12-03 10:53:56</Modified>
+      <AgentID>1156</AgentID>
+      <Name>Property News 02Dec2014  by page</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-12-05 06:17:49</Created>
+      <Modified>2014-12-05 06:18:11</Modified>
+      <AgentID>1157</AgentID>
+      <Name>FlipKart - test</Name>
+      <Description />
+      <Settings>MaximizeBrowserWindow, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-11 10:07:23</Created>
+      <Modified>2014-12-11 10:12:07</Modified>
+      <AgentID>1158</AgentID>
+      <Name>SteamSpecials</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-12 09:53:53</Created>
+      <Modified>2014-12-12 09:53:54</Modified>
+      <AgentID>1159</AgentID>
+      <Name>MozendaHelpDocs</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-12 11:20:00</Created>
+      <Modified>2014-12-16 07:08:02</Modified>
+      <AgentID>1160</AgentID>
+      <Name>intuit</Name>
+      <Description />
+      <Settings>BrowserIsolation, MaximizeBrowserWindow, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-12 12:01:25</Created>
+      <Modified>2014-12-12 12:01:25</Modified>
+      <AgentID>1161</AgentID>
+      <Name>MobileSiteTest</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-16 07:49:18</Created>
+      <Modified>2014-12-16 07:57:05</Modified>
+      <AgentID>1162</AgentID>
+      <Name>P-US-TENNESSEE</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2014-12-16 10:14:20</Created>
+      <Modified>2014-12-16 10:14:24</Modified>
+      <AgentID>1163</AgentID>
+      <Name>crystal-d-com-boojie-btw</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2014-12-20 12:38:48</Created>
+      <Modified>2014-12-20 12:39:17</Modified>
+      <AgentID>1164</AgentID>
+      <Name>youtubeTest</Name>
+      <Description />
+      <Settings>UseAnonymizer</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-01-09 11:58:00</Created>
+      <Modified>2015-01-09 11:58:00</Modified>
+      <AgentID>1165</AgentID>
+      <Name>test agent</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2015-01-14 12:33:32</Created>
+      <Modified>2015-01-14 12:33:33</Modified>
+      <AgentID>1166</AgentID>
+      <Name>MacysWomensShoes</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2015-01-14 12:33:49</Created>
+      <Modified>2015-01-28 10:59:03</Modified>
+      <AgentID>1167</AgentID>
+      <Name>MacysTemplate</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-01-14 14:05:12</Created>
+      <Modified>2015-01-14 15:41:56</Modified>
+      <AgentID>1168</AgentID>
+      <Name>ContactCrawler</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-01-20 10:45:21</Created>
+      <Modified>2015-01-20 11:06:05</Modified>
+      <AgentID>1169</AgentID>
+      <Name>Moment - Test</Name>
+      <Description />
+      <Settings>BrowserIsolation, MaximizeBrowserWindow, ShowImages, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-01-20 11:10:00</Created>
+      <Modified>2015-01-20 11:10:00</Modified>
+      <AgentID>1170</AgentID>
+      <Name>moment test</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-01-21 13:54:29</Created>
+      <Modified>2015-01-21 13:56:54</Modified>
+      <AgentID>1171</AgentID>
+      <Name>Test-ItemID</Name>
+      <Description>This is really stupid and no one should ever do this.</Description>
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-01-22 10:39:38</Created>
+      <Modified>2015-01-23 16:00:36</Modified>
+      <AgentID>1172</AgentID>
+      <Name>AmazonPrimeVideos</Name>
+      <Description />
+      <Settings>BrowserIsolation, MaximizeBrowserWindow, ShowImages, SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-01-28 11:32:14</Created>
+      <Modified>2015-01-28 11:40:32</Modified>
+      <AgentID>1173</AgentID>
+      <Name>MacysTest</Name>
+      <Description />
+      <Settings>BrowserIsolation, StopOnHarvestingError, StopOnWebsiteError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-01-28 11:52:42</Created>
+      <Modified>2015-01-28 11:52:44</Modified>
+      <AgentID>1174</AgentID>
+      <Name>MacysMensShoes</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-02-04 11:04:56</Created>
+      <Modified>2015-02-04 11:22:52</Modified>
+      <AgentID>1175</AgentID>
+      <Name>BlueCross</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-02-04 11:28:23</Created>
+      <Modified>2015-02-04 11:54:03</Modified>
+      <AgentID>1176</AgentID>
+      <Name>BlueCross test 2</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-02-04 13:21:50</Created>
+      <Modified>2015-02-04 13:24:39</Modified>
+      <AgentID>1177</AgentID>
+      <Name>AETNA search by category</Name>
+      <Description />
+      <Settings>BrowserIsolation, MaximizeBrowserWindow, SingleBrowser, StopOnHarvestingError</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-02-25 14:58:46</Created>
+      <Modified>2015-02-27 15:25:51</Modified>
+      <AgentID>1178</AgentID>
+      <Name>LA14 - POC Kaleb</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-02-25 15:12:27</Created>
+      <Modified>2015-02-27 15:29:37</Modified>
+      <AgentID>1179</AgentID>
+      <Name>Falabella Kaleb</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-03-05 08:10:22</Created>
+      <Modified>2015-03-05 08:10:22</Modified>
+      <AgentID>1180</AgentID>
+      <Name>SupplyHouse search by SKU</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-03-09 14:28:39</Created>
+      <Modified>2015-03-09 14:38:23</Modified>
+      <AgentID>1181</AgentID>
+      <Name>Indiana DDS - test</Name>
+      <Description />
+      <Settings>SingleBrowser</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-03-09 14:48:59</Created>
+      <Modified>2015-03-09 15:04:57</Modified>
+      <AgentID>1182</AgentID>
+      <Name>mylicense - test</Name>
+      <Description />
+      <Settings />
+    </Agent>
+    <Agent>
+      <Created>2015-03-10 08:04:49</Created>
+      <Modified>2015-03-10 08:04:50</Modified>
+      <AgentID>1183</AgentID>
+      <Name>Breakfast-Niagra Falls</Name>
+      <Description />
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-03-12 08:40:36</Created>
+      <Modified>2015-03-12 08:40:36</Modified>
+      <AgentID>1184</AgentID>
+      <Name>Simple Hotels</Name>
+      <Description>capacent   single date</Description>
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-03-17 10:07:06</Created>
+      <Modified>2015-03-17 10:07:07</Modified>
+      <AgentID>1185</AgentID>
+      <Name>Ethical Hacker - POC</Name>
+      <Description>EY cyber threat</Description>
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-03-17 10:54:20</Created>
+      <Modified>2015-03-17 10:57:05</Modified>
+      <AgentID>1186</AgentID>
+      <Name>HomelandSecurityNewsWire - POC</Name>
+      <Description>EY cyber threat</Description>
+      <Settings>BrowserIsolation</Settings>
+    </Agent>
+    <Agent>
+      <Created>2015-03-25 10:58:24</Created>
+      <Modified>2015-03-25 10:59:12</Modified>
+      <AgentID>1187</AgentID>
+      <Name>Taobao</Name>
+      <Description />
+      <Settings>Beta, BrowserIsolation</Settings>
+    </Agent>
+  </AgentList>
+</AgentGetListResponse>

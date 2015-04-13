@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <script type="text/javascript" src="http://demos.amitavroy.com/learningci/assets/js/xml2json.js" charset="UTF-8"></script>
+    <script src= "http://ajax.googleapis.com/ajax/libs/angularjs/1.3.14/angular.min.js"></script>
+    <script src= "http://www.simplygoodcode.com/wp-content/uploads/2014/07/angular.ng-modules.js"></script>
+    <meta charset="utf-8">
+    <script>
+          var todoApp = angular.module('todosApp',[]);
+        
+        todoApp.factory('todoFactory',function($http){
+          var factory = [];
+          
+          factory.getTodos = function(){
+              return $http.get("http://api.mozenda.com/rest?WebServiceKey=541A27BE-3AC7-4A9E-8CAB-6522C7D987EE&Service=Mozenda10&Operation=Agent.GetList");  
+          }
+
+          return factory;
+      });
+        
+        todoApp.controller('todos',['$scope', 'todoFactory', function($scope,todoFactory){
+
+          $scope.todos = [];
+          loadTodos();
+          
+          function loadTodos(){
+            todoFactory.getTodos().success(function(data){
+                agents  = x2js.xml_str2json(data).AgentGetListResponse.AgentList.Agent;
+                $scope.todos = agents;
+            });
+        }
+    }]);
+//------------------------------------------------------------------
+          var moduleB = angular.module("MyModuleB", []);
+
+          moduleB.factory('infoFactory',function($http){
+          var factory = [];
+          
+          factory.getInfo = function(){
+
+          	 var url = "http://api.mozenda.com/rest?WebServiceKey=541A27BE-3AC7-4A9E-8CAB-6522C7D987EE&Service=Mozenda10&Operation=Agent.Get&AgentID=";
+          	 url += document.getElementById('agentID').value;
+          	 console.log(url);
+              return $http.get(url);  
+          }
+
+          return factory;
+     	 });
+
+		moduleB.controller('MyControllerB',['$scope', 'infoFactory', function($scope,infoFactory){
+
+			$scope.MyControllerB = [];
+          	loadInfo();
+          	
+          	$scope.toggle = function() {
+        		console.log("click");
+    			};
+          	
+          function loadInfo(){
+            infoFactory.getInfo().success(function(data){
+                info  = x2js.xml_str2json(data).AgentGetResponse;
+                console.log(info)
+                $scope.MyControllerB = info;
+            });
+        }
+    }]);
+//---------------Extra Functions-------------------------------------
+		
+
+		function check(p1) {
+			console.log("click");
+			console.log(p1);
+			document.getElementById('agentID').value=p1;
+			document.getElementById('agentID').focus();
+			document.getElementById('agentID').blur();
+}
+
+function checkView(p1) {
+			console.log("click");
+			console.log(p1);
+			document.getElementById('viewID').value=p1;
+			document.getElementById('viewID').focus();
+			document.getElementById('viewID').blur();
+}
+
+//----------------Onchange-----------------------------------
+var app2=angular.module('myApp2', []);
+
+app2.factory('infoFactory',function($http){
+          var factory = [];
+          
+          factory.getInfo = function(){
+
+          	 var url = "http://api.mozenda.com/rest?WebServiceKey=541A27BE-3AC7-4A9E-8CAB-6522C7D987EE&Service=Mozenda10&Operation=Agent.Get&AgentID=";
+          	 url += document.getElementById('agentID').value;
+          	 console.log(url);
+              return $http.get(url);  
+          }
+
+          return factory;
+     	 });
+
+app2.directive('onChange', function() {    
+    return {
+        restrict: 'A',
+        scope:{'onChange':'=' },
+        link: function(scope, elm, attrs) {            
+            scope.$watch('onChange', function(nVal) { elm.val(nVal); });            
+            elm.bind('blur', function() {
+                var currentValue = elm.val();                
+                if( scope.onChange !== currentValue ) {
+                    scope.$apply(function() {
+                        scope.onChange = currentValue;
+                    });
+                }
+            });
+        }
+    };        
+});
+
+app2.controller('MyCtrl', ['$scope', 'infoFactory', function($scope,infoFactory) { 
+    $scope.strText = document.getElementById('agentID').value;
+          	
+          	$scope.test = function() {
+        		$scope.MyCtrl = [];
+	          	loadInfo();
+	          	console.log("done");
+    			};
+
+
+    		
+          	
+          function loadInfo(){
+            infoFactory.getInfo().success(function(data){
+                info  = x2js.xml_str2json(data).AgentGetResponse;
+                console.log(info)
+                $scope.MyCtrl = info; 
+            	});
+        	}	
+    }]);
+
+//-------------------------------------
+var appViews=angular.module('myAppViews', []);
+appViews.factory('viewFactory',function($http){
+          var factory = [];
+          
+          factory.getInfo = function(){
+
+          	 var url = "https://api.mozenda.com/rest?WebServiceKey=541A27BE-3AC7-4A9E-8CAB-6522C7D987EE&Service=Mozenda10&Operation=Collection.GetViews&CollectionID=";
+          	 url += document.getElementById('viewButton').value;
+          	 console.log(url);
+              return $http.get(url);  
+          }
+
+          return factory;
+     	 });
+
+appViews.controller('showViews', ['$scope', 'viewFactory', function($scope,viewFactory) { 
+          	
+          	$scope.getViews = function() {
+        		$scope.showViews = [];
+	          	loadViews();
+	          	console.log("done");
+    			};
+    		
+          	
+          function loadViews(){
+            viewFactory.getInfo().success(function(data){
+            	console.log(data);
+                info  = x2js.xml_str2json(data).CollectionGetViewsResponse.ViewList.View;
+                console.log(info);
+                $scope.showViews = info; 
+            	});
+        	}	
+    }]);
+
+//---------------------Get Items in a view---------------------------------------
+var appViewFields=angular.module('myAppViewFields', []);
+
+appViewFields.factory('fieldFactory',function($http){
+          var factory = [];
+          
+          factory.getInfo = function(){
+
+          	 var url = "https://api.mozenda.com/rest?WebServiceKey=541A27BE-3AC7-4A9E-8CAB-6522C7D987EE&Service=Mozenda10&Operation=View.GetItems&ViewID=";
+          	 url += document.getElementById('viewID').value;
+          	 console.log(url);
+              return $http.get(url);  
+          }
+
+          return factory;
+     	 });
+
+appViewFields.directive('onChangeView', function() {    
+    return {
+        restrict: 'A',
+        scope:{'onChangeView':'=' },
+        link: function(scope, elm, attrs) {            
+            scope.$watch('onChangeView', function(nVal) { elm.val(nVal); });            
+            elm.bind('blur', function() {
+                var currentValue = elm.val();                
+                if( scope.onChangeView !== currentValue ) {
+                    scope.$apply(function() {
+                        scope.onChangeView = currentValue;
+                    });
+                }
+            });
+        }
+    };        
+});
+
+appViewFields.controller('showViewFields', ['$scope', 'fieldFactory', function($scope,fieldFactory) { 
+         $scope.strView = document.getElementById('viewID').value; 	
+          	$scope.getFields = function() {
+        		$scope.showViewFields = [];
+	          	loadViewFields();
+	          	console.log("done");
+    			};
+    		
+          	
+          function loadViewFields(){
+            fieldFactory.getInfo().success(function(data){
+                info  = x2js.xml_str2json(data).ViewGetItemsResponse.ItemList.Item[0];
+                console.log("This is here");
+                var test = Object.keys(info);
+                console.log(test);
+                var setofkeys=[];
+                for(var x = 0; x < test.length; x++){
+                	console.log(test[x]);
+                	if(test[x].indexOf("_") == -1 && test[x].indexOf("toString") == -1)
+                		setofkeys.push(test[x]);
+
+                }
+                console.log(setofkeys);
+                
+                $scope.showViewFields = setofkeys; 
+
+               
+
+            	});
+        	}	
+    }]);
+
+//------------------------------------------------------------
+        </script>
+    </head>
+   <body ng-modules="todosApp, MyModuleB, myApp2, myAppViews, myAppViewFields">
+
+    <div class="col-wrapper" ng-controller="MyCtrl">
+        <div class="col col-small">
+            <h2>Parsing XML data with AngularJS</h2>
+            <div ng-controller="MyControllerB">
+                    <p>Name: {{MyControllerB.Name}}</p>
+            </div>
+            <input type="text" ng-model="search" class="search-query" placeholder="Search">
+            <div ng-controller="todos" style="width:50%; display:inline"><ul><li ng-repeat="todo in todos | filter:search">{{todo.AgentID}}  <button value='{{todo.AgentID}}' onclick="check(this.value)" ng-click="test()">{{todo.Name}}</button></div>
+        </div>
+        
+        <div class="col col-large">
+        	<div>
+	        	Input: <input id="agentID" value="1004" on-change="strText">
+			    <p><strong>Test: </strong>{{strText}}</p>
+			    <p><strong>Name: </strong>{{MyCtrl.Name}}</p>
+			    <p><strong>AgentID: </strong>{{MyCtrl.AgentID}}</p>
+				<p><strong id='CollectionID'>CollectionID: </strong>{{MyCtrl.CollectionID}}</p>
+				<p><strong>Description: </strong>{{MyCtrl.Description}}</p>
+				<p><strong>Domain: </strong>{{MyCtrl.Domain}}</p>
+
+				
+				<div ng-controller='showViews'>
+					<button id='viewButton' value='{{MyCtrl.CollectionID}}' ng-click='getViews()'>See Views</button>
+					{{showViews.Name}}
+					<br>
+					<div class='Views'>
+						<ul><li ng-repeat="y in showViews | filter:search">
+						<p><strong>Name: </strong>{{y.Name}}<br>
+						<strong>CollectionID: </strong>{{y.CollectionID}}<br>
+						<strong> ViewID: </strong>{{y.ViewID}} </p> 
+						<button value='{{y.ViewID}}' onclick='checkView(this.value)'>Set View</button>
+					</div>
+				</div>
+				<br>
+        	</div>
+
+        </div>
+       
+         <div class="col col-small" ng-controller='showViewFields'>
+         	<div >
+         		<strong>Name: </strong>{{MyCtrl.Name}}<br>
+			    <strong>AgentID: </strong>{{MyCtrl.AgentID}}<br>
+         		View: <input value='1004' id='viewID' on-change='strView'>
+         		<button ng-click='getFields()'>Get Fields</button><br>
+         		Name: {{showViewFields}}
+         		<div ng-repeat="key in showViewFields">
+				  {{key}}
+				</div>
+         		
+         		
+         	</div>
+         	
+
+
+         </div>
+    </div>
+
+    </body>
+</html>

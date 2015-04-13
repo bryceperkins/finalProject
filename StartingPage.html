@@ -1,0 +1,181 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Agent Access</title>
+  <meta name="description" content="Agent Access">
+  <meta name="author" content="SitePoint">
+<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+  <style type="text/css">
+  .wrapper{
+   width: 82%;
+   margin: 0 auto;
+}
+.header{
+   float: left;
+   width: 100%;
+   background-color: #f4f4f4
+}
+.wrapleft{
+   float: left;
+   width: 100%;
+   background-color: #cfcfcf
+}
+.left{
+   margin-right: 873px;
+   background-color: #999999;
+   height: 600px;
+}
+
+.right{
+   float: right;
+   width: 863px;
+   margin-left: -863px;
+   background-color: #999999;
+   height: 600px;
+}
+.footer{
+   float: left;
+   width: 100%;
+   background-color: #f4f4f4;
+}
+body {
+   padding: 0px;
+   margin: 0px;
+}
+  </style>
+
+</head>
+
+<body>
+
+
+<div class="wrapper">
+    <div class="header">
+	   <h1>Agent Access</h1>
+    </div> 
+    <div class="wrapleft"> 	  
+	    <div class="left">
+	    	<form>
+				Choose and Account: <input type="text" id="accountID" value="">
+				<input id="button" type="submit" value="Submit"><br>
+				<div id="txtHints">
+				Suggestion: <span id="txtHint">Empty</span>
+				</div>
+			</form>
+	        
+	    </div>
+	</div>    
+	    <div class="right">
+          <form>
+            Choose and Account: <input type="text" id="GetaccountID" value="">
+            <input id="button" type="submit" value="Submit"><br>
+            <div id="txtHints">
+              Suggestion: <span id="txtHint">Empty</span>
+            </div>
+          </form>
+
+
+	        <h2>Add account to database</h2>
+	       Account ID: <input type="text" id="accountID" value=""><br>			
+  			Account Name<input type="text" id="accountName" value=""><br>
+  			API Key:<input type="text" id="accountAPIKey" value=""><br>
+  			<input id="button" type="submit" value="Submit"><br>
+  				<br>
+
+  			 <form id="commentForm" action=""> 
+		      Name: <input type="text" id="Name" value="Mickey"><br> 
+		      Comment: <input type="text" id="Comment" value="Hello"><br> 
+		    </form> 
+
+		    <button>Serialize form values</button> 
+		    
+		    <div id="json"></div> 
+			<div id="done"> </div><br><br>
+			Current Comments: <br><br>
+			<div id="currentComments"></div>
+
+
+	    </div> 
+	    <div class="footer">
+	        footer
+	    </div>     
+</div>
+<script>
+
+function loadXMLDoc(filename)
+{
+if (window.XMLHttpRequest)
+  {
+  xhttp=new XMLHttpRequest();
+  }
+else // code for IE5 and IE6
+  {
+  xhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xhttp.open("GET",filename,false);
+xhttp.send();
+return xhttp.responseXML;
+}
+
+$("#GetaccountID").keyup(function() {
+      xmlDoc=loadXMLDoc("testXML.xml");
+      console.log(xmlDoc);
+      console.log("test");
+  });
+</script>
+
+
+  <script>
+//dont modify
+$("#accountID").keyup(function() {
+      var jsonString = "getcity?q=";
+      jsonString+= $("#accountID").val();
+      var everything; 
+      console.log(jsonString);
+      $.getJSON(jsonString, function(data) {
+          if(data.length > 0) {
+              everything = "<ul>";
+              $.each(data, function(i, item) {
+              everything += "<li> " + data[i].city + "</li>";
+              });
+          everything += "</ul>";
+          $("#txtHint").html(everything);
+          } else {
+              everything = "<ul class='list-group'><li class='list-group-item'>No Suggestions</li></ul>";
+          }
+      })
+      .done(function() {console.log('getJSON request succeeded!'); })
+      .fail(function(jqXHR, textStatus, errorThrown) {
+            $("#textHint").html("<ul class='list-group'><li class='list-group-item'>No Suggestions</li></ul>");
+        });
+  });
+</script>
+
+<script> 
+      $(document).ready(function(){ 
+          $("button").click(function(){
+               var myobj = {Name:$("#Name").val(), Comment: $("#Comment").val()};
+               jobj = JSON.stringify(myobj);
+               $("#json").text(jobj); 
+			   
+               var url= "http://52.10.97.231/comment";
+               $.post(url, jobj, function(data, textStatus) {
+               $("#done").html("<h3>" + textStatus + "</h3>");
+               });
+               $.getJSON(url, function(data) {
+                   var everything;
+                   everything = "<ul>";
+	           $.each(data, function(i, item) {
+	               everything += "<li> Name: " + data[i].Name + " Comment: " + data[i].Comment + "</li>";
+	           });
+	       everything += "</ul>";
+               $("#currentComments").html(everything);
+               });
+          }); 
+      }); 
+    </script>
+</body>
+</html>
